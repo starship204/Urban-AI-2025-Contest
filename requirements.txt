@@ -1,0 +1,24 @@
+numpy>=1.21.0
+pandas>=1.3.0
+xgboost>=1.5.0
+optuna>=3.0.0
+scikit-learn>=1.0.0
+matplotlib>=3.5.0
+scipy>=1.7.0
+requests>=2.25.0
+
+# XGBoost with GPU support comment
+# NOTE: This code assumes GPU availability and uses XGBoost's 'gpu_hist' tree method
+# For GPU support, you need:
+# 1. CUDA-compatible GPU
+# 2. CUDA toolkit installed
+# 3. XGBoost compiled with GPU support
+# xgboost>=1.5.0
+
+# Alternative installation for GPU support:
+# pip install xgboost[gpu]
+# or for conda:
+# conda install -c conda-forge py-xgboost-gpu
+
+# To run without GPU, modify the code:
+# use_gpu=False in all instances
